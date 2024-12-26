@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- used to change image on different screen  -->
+    <picture>
+        <!-- tiger img -->
+        <source media="(max-width: 600px)"
+            srcset="https://t4.ftcdn.net/jpg/06/22/69/19/360_F_622691912_UqnMQAWYxUGeXBmzg2CFUdCCx6MVyG0B.jpg">
+
+        <!-- laptop -->
+        <source media="(max-width: 1000px)"
+            srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1801,h_954/https://assets.ubuntu.com/v1/622b4fe1-numpy-numbat-on-dell-xps-13.jpg">
+
+        <!-- nature -->
+        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg"
+            alt="" width="400px">
+    </picture>
+
+    <!-- ==================================================================== -->
+    <picture>
+        <!-- laptop -->
+        <source media="(min-width: 1000px)"
+            srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1801,h_954/https://assets.ubuntu.com/v1/622b4fe1-numpy-numbat-on-dell-xps-13.jpg">
+
+        <!-- tiger img -->
+        <source media="(min-width: 600px)"
+            srcset="https://t4.ftcdn.net/jpg/06/22/69/19/360_F_622691912_UqnMQAWYxUGeXBmzg2CFUdCCx6MVyG0B.jpg">
+
+        <!-- nature -->
+        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg"
+            alt="" width="400px">
+    </picture>
+
+    <!-- ==================================================================== -->
+    <picture>
+        <!-- laptop -->
+        <source media="(min-width: 1000px)"
+            srcset="https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1801,h_954/https://assets.ubuntu.com/v1/622b4fe1-numpy-numbat-on-dell-xps-13.jpg">
+
+        <!-- tiger img -->
+        <source media="(max-width: 600px)"
+            srcset="https://t4.ftcdn.net/jpg/06/22/69/19/360_F_622691912_UqnMQAWYxUGeXBmzg2CFUdCCx6MVyG0B.jpg">
+
+        <!-- nature -->
+        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg"
+            alt="" width="400px">
+    </picture>
+</body>
+
+</html>
