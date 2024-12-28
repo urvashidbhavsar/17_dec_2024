@@ -1,0 +1,17 @@
+tag for use to create layout :
+1. header 
+2. footer
+3. aside 
+4. article 
+5. section 
+6. main 
+7. nav
+8. div etc
+
+sementic tag : 
+which is tell about them.
+p, b, header, nav 
+
+non-sementic tag :
+which is cant tell about them.
+div, span 
