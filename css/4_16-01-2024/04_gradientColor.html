@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 3 type of gradient color : radial, linear and conic */
+        div {
+            height: 200px;
+            width: 200px;
+            margin: 15px;
+            border: 1px solid black;
+        }
+
+        .div1 {
+            /* direction = to bottom|top|left|right or set deg*/
+            background-image: linear-gradient(60deg, green 50px, navy 150px, crimson 200px);
+        }
+
+        .div2 {
+            /* direction = circle at center|bottom|top|left|right or set deg*/
+            background: radial-gradient(circle at top left, green 80px, navy 186px, crimson 230px);
+        }
+
+        .div3 {
+            background: conic-gradient(green 20deg, navy 150deg, crimson 200deg, green 358deg);
+        }
+
+        .div4 {
+            background: repeating-linear-gradient(blue 20px, #6363e4 40px);
+        }
+
+        .div5 {
+            background: repeating-radial-gradient(blue 10px, #6363e4 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</body>
+
+</html>
