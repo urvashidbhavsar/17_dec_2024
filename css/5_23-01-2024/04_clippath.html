@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+
+            /* used to set image/div in any shape */
+
+            /* 50% - circle size, 30% left-right, 20% top-bottom */
+            /* clip-path: circle(50% at 30% 20%); */
+
+            /* 47%-circle size at x, 30%-circle size at y */
+            /* clip-path: ellipse(47% 30% at 50% 36%); */
+
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://letsenhance.io/static/a31ab775f44858f1d1b80ee51738f4f3/11499/EnhanceAfter.jpg" alt="">
+</body>
+
+</html>

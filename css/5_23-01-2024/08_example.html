@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rebeccapurple;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box:last-child {
+            background-color: rebeccapurple;
+        }
+
+        .box:nth-child(2) {
+            background-color: darkcyan;
+        }
+
+        .box:nth-child(4) {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+        <tr>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+            <td>abc</td>
+        </tr>
+    </table>
+
+    <div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
