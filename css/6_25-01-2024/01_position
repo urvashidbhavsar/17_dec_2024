@@ -1,0 +1,11 @@
+position means set element on any area.
+
+value :
+static  (default)
+sticky   
+fixed
+relative (parent)
+absolute (child)
+
+list of property while using with position fixed, sticky, relative and absolute.
+left, right, top, bottom, z-index - set element priority
