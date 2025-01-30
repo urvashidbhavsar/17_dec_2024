@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            /* flex always given in parent class then after it effect show on child element */
+            display: flex;
+        }
+
+        .main div {
+            height: 100px;
+            width: 30%;
+            font-size: 30px;
+        }
+
+        .div1 {
+            background-color: rebeccapurple;
+        }
+
+        .div2 {
+            background-color: yellowgreen;
+        }
+
+        .div3 {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">4</div>
+    </div>
+</body>
+
+</html>

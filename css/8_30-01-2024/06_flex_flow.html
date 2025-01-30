@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            /* use to control flex layout */
+            
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: row-reverse wrap;
+        }
+
+        .div {
+            height: 100px;
+            width: 50%;
+            font-size: 40px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .div {
+            height: 100px;
+            width: 100px;
+        }
+
+        .div:nth-child(even) {
+            background-color: teal;
+        }
+
+        .div:nth-child(odd) {
+            background-color: coral;
+        }
+
+        .div:nth-child(1) {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 10%;
+        }
+
+        .div:nth-child(2) {
+            flex: 2 1 10%;
+        }
+
+        .div:nth-child(3) {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div">1</div>
+        <div class="div">2</div>
+        <div class="div">3</div>
+        <div class="div">4</div>
+        <div class="div">5</div>
+    </div>
+</body>
+
+</html>

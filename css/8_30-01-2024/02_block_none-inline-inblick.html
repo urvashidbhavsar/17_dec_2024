@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            /* when we set none every element set height and width 0 */
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list1 {
+            background-color: goldenrod;
+        }
+
+        .list1 li {
+            /* it cant cover element height and width only set element in a row */
+            display: inline;
+            padding: 20px;
+            background-color: saddlebrown;
+            height: 100px;
+        }
+
+        .list2 {
+            background-color: coral;
+        }
+
+        .list2 li {
+            /* it can cover element height and width and also set element in a row */
+            display: inline-block;
+            padding: 20px;
+            background-color: wheat;
+            /* height: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+
+    <ul class="list1">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+    <hr>
+
+    <ul class="list2">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+</body>
+
+</html>
