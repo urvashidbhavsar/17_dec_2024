@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imggallry {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .img1 {
+            grid-row: 1 / span 2;
+        }
+
+        .img4 {
+            grid-row: 2 / span 2;
+            grid-column: 2;
+        }
+
+        .img5 {
+            grid-row: 2 / span 2;
+            grid-column: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imggallry">
+        <div class="img1">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/ab1.jpg"
+                alt="">
+        </div>
+        <div class="img2">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g3.jpg"
+                alt="">
+        </div>
+        <div class="img3">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g2.jpg"
+                alt="">
+        </div>
+        <div class="img4">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/ab2.jpg"
+                alt="">
+        </div>
+        <div class="img5">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/ab3.jpg"
+                alt="">
+        </div>
+        <div class="img6">
+            <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g4.jpg"
+                alt="">
+
+        </div>
+    </div>
+</body>
+
+</html>
