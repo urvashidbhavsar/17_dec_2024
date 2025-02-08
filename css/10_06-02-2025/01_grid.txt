@@ -11,7 +11,7 @@ following property are used when apply grid
 5. grid-row-end (child)
 6. grid-column (child)
 7. grid-column-start (child)
-8. grid-column-end  (child)n
+8. grid-column-end  (child)
 9. gap (parent)
 10. row-gap (parent)
 11. column-gap (parent)
