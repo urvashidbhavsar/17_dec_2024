@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            height: 600px;
+            display: grid;
+            place-content: center;
+        }
+
+        .cubeBox {
+            height: 200px;
+            width: 200px;
+            position: relative;
+            transform: translateZ(-100px);
+            perspective: 400px;
+            transform-style: preserve-3d;
+            perspective-origin: 150% 120%;
+        }
+
+        .side {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            font-size: 40px;
+            display: grid;
+            place-content: center;
+            text-transform: capitalize;
+        }
+
+        .front {
+            background-color: rgba(255, 0, 0, 0.7);
+            transform: rotateX(0deg) translateZ(100px);
+        }
+
+        .back {
+            background-color: rgba(76, 0, 255, 0.7);
+            transform: rotateX(0deg) translateZ(-100px);
+        }
+
+        .left {
+            background-color: rgba(255, 0, 187, 0.7);
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+
+        .right {
+            background-color: rgba(255, 128, 0, 0.7);
+            transform: rotateY(-90deg) translateZ(-100px);
+        }
+
+        .top {
+            background-color: rgba(0, 255, 170, 0.7);
+            transform: rotateX(-90deg) translateZ(-100px);
+        }
+
+        .bottom {
+            background-color: rgba(179, 255, 0, 0.7);
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cubeBox">
+        <div class="side front">front</div>
+        <div class="side back">back</div>
+        <div class="side left">left</div>
+        <div class="side right">right</div>
+        <div class="side top">top</div>
+        <div class="side bottom">bottom</div>
+    </div>
+</body>
+
+</html>
