@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .space {
+            width: fit-content;
+            height: 69px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background: indianred;
+            border: 2px solid indianred;
+            color: white;
+            font-size: 17px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            animation: Bounce 0.5s ease infinite alternate;
+        }
+
+        .shadow {
+            height: 40px;
+            width: 137px;
+            background-color: #d6d3d3;
+            border-radius: 50%;
+            transform: rotateX(78deg) translateY(-50px);
+            scale: 0.5;
+        }
+
+        .space:hover .shadow {
+            animation: shadow 0.5s ease infinite alternate;
+        }
+
+        @keyframes Bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes shadow {
+            0% {
+                scale: 0.5;
+            }
+
+            100% {
+                scale: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="space">
+        <button class="btn">Click here</button>
+        <div class="shadow"></div>
+    </div>
+</body>
+
+</html>

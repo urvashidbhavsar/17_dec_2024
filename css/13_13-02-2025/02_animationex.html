@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            height: 600px;
+            display: grid;
+            place-content: center;
+        }
+
+        .main {
+            height: 200px;
+            width: 200px;
+            position: relative;
+        }
+
+        .circle1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border-left: 5px solid teal;
+            border-top: 5px solid teal;
+            border-bottom: 5px solid transparent;
+            border-right: 5px solid transparent;
+            animation: rotateright 1s linear infinite;
+        }
+
+        .circle2 {
+            position: absolute;
+            top: 26px;
+            left: 26px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border-bottom: 5px solid crimson;
+            border-right: 5px solid crimson;
+            border-top: 5px solid transparent;
+            border-left: 5px solid transparent;
+            animation: rotateleft 1s linear infinite;
+        }
+
+        @keyframes rotateright {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+        }
+
+        @keyframes rotateleft {
+            0% {
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: -360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+
+</html>
