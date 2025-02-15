@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .overlay {
+            width: 500px;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+        .overlaytext {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: white;
+            display: grid;
+            place-content: center;
+            transform: scale(0);
+            transition: 0.5s ease;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .overlay:hover .overlaytext {
+            transform: scale(1);
+            border-radius: 0;
+        }
+
+        h1 {
+            transform: translateY(300px);
+            transition: 1s ease;
+        }
+
+        .overlay:hover h1 {
+            transition-delay: 1s;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <img src="https://th.bing.com/th/id/OIG2.DR0emznkughEtqI1JLl." alt="">
+
+        <div class="overlaytext">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+</body>
+
+</html>

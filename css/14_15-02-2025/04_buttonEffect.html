@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 15px 30px;
+            border: 2px solid transparent;
+            font-size: 20px;
+            transition: 1s ease all;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: indianred;
+            color: white;
+        }
+
+        .btn:hover {
+            border-style: dashed;
+            border-color: white;
+        }
+
+        .btn1 {
+            background-color: transparent;
+            border-color: indigo;
+            color: indigo;
+            position: relative;
+        }
+
+        .btn1::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: indigo;
+            z-index: -1;
+            transition: 1s ease;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .btn1:hover {
+            color: white;
+        }
+
+        .btn1:hover::after {
+            transform: scaleX(1);
+        }
+
+        .btn2 {
+            background-color: salmon;
+        }
+
+        .btn2:hover {
+            transform: translateY(-5px);
+            box-shadow: 3px 3px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn">Click here</button>
+    <br><br>
+
+    <button class="btn1">Click here</button>
+    <br><br>
+
+    <button class="btn2">Click here</button>
+</body>
+
+</html>
