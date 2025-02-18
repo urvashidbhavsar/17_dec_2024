@@ -1,0 +1,10 @@
+how to break down your screen for diff devices.
+
+DEVICES 
+
+mobile devices              < 576px (max-width)
+                            > 576px (min-width)
+tablet devices              > 768px
+mini screen                 > 992px
+normal screen               > 1200px
+extra large screen          > 1400px

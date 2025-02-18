@@ -1,0 +1,61 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ ul {
+     list-style: none;
+ }
+
+ .menubar {
+     padding: 20px;
+     background-color: darksalmon;
+ }
+
+ .menubar .list {
+     display: flex;
+     gap: 20px;
+ }
+
+ .menubar .list li {
+     padding: 10px;
+ }
+
+ .menubar .list li a {
+     color: black;
+     font-weight: 500;
+ }
+
+ .menubar .dropmenu {
+     position: relative;
+ }
+
+ .menubar .dropdown {
+     background-color: saddlebrown;
+     display: none;
+     position: absolute;
+     width: 123px;
+     border-radius: 10px;
+     left: 0;
+     top: 38px;
+ }
+
+ .menubar .dropmenu:hover .dropdown {
+     display: block;
+ }
+
+ .menubar .dropmenu .fa-chevron-down {
+     transition: .5s ease;
+ }
+
+ .menubar .dropmenu:hover .fa-chevron-down {
+     rotate: -180deg;
+ }
