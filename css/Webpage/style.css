@@ -16,8 +16,21 @@ ul {
 }
 
 .boxlayout {
-    max-width: 1200px;
     margin: auto;
+    padding: 0 10px;
+}
+
+:root {
+    --font1: calc(3vw + 20px);
+    --font2: calc(2vw + 20px);
+}
+
+.btn {
+    font-size: 18px;
+    background: #1869da;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid transparent;
 }
 
 /* ======================================== */
@@ -61,6 +74,14 @@ header .navbar .navbtn {
     border: 1px solid gray;
 }
 
+header .navbar .menubtn {
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
 /* ==================================== */
 .heroimg {
     background: url(https://preview.colorlib.com/theme/pivot/img/slider-1.jpg.webp) center / cover rgba(0, 0, 0, 0.5);
@@ -74,7 +95,7 @@ header .navbar .navbtn {
 }
 
 .heroimg .herotext h1 {
-    font-size: 55px;
+    font-size: var(--font1);
     color: white;
     text-align: center;
     margin: auto;
@@ -84,21 +105,12 @@ header .navbar .navbtn {
     padding-bottom: 20px;
 }
 
-.heroimg .herotext button {
+.heroimg .herotext .btn {
     padding: 15px 30px;
-    background-color: #0659a8;
-    color: white;
-    border: 1px solid transparent;
-    font-size: 17px;
-    border-radius: 5px;
     text-transform: uppercase;
 }
 
 /* ================================================= */
-/* .expsection {
-    background-color: rgb(99, 129, 156);
-} */
-
 .expsection .expertbox {
     padding: 50px 0;
     display: flex;
@@ -135,4 +147,38 @@ header .navbar .navbtn {
 
 .expsection .expertbox img {
     max-width: 100%;
+}
+
+/* ---------------------------------------------------------- */
+.projdetails .space {
+    padding: 50px 0;
+}
+
+.projdetails .title {
+    text-align: center;
+}
+
+.projdetails .title h1 {
+    font-size: var(--font2);
+    padding-bottom: 10px;
+}
+
+.projdetails .title h1::after {
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: #1869da;
+    display: block;
+    margin: 30px auto;
+}
+
+.projdetails .title p {
+    width: 500px;
+    margin: auto;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.projdetails .title .btn {
+    padding: 15px 30px;
 }
