@@ -1,0 +1,19 @@
+1) input type = text, password, number, date, datetimelocal, time, week, month, file, search,etc => form-control
+2) textarea => form-control
+
+3) input type radio and checkbox => 
+    input => form-check-input 
+    label => form-check-label 
+    parent div => form-check 
+    parent div (horizontal) => form-check-inline 
+
+4) input- color => form-control form-control-color 
+
+5) input range => form-range 
+
+6) select-option => form-select 
+
+7) input-group => 
+    input types => form-control, depend on type 
+    label / dropdown / button => input-group-text 
+    parent div => input-group

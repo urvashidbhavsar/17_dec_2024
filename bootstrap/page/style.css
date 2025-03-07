@@ -1,0 +1,27 @@
+.navbar .navbar-nav a {
+    color: white;
+}
+
+.navbar .navbar-nav a.active {
+    color: #ffc107;
+}
+
+.slider1 {
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner1.jpg) no-repeat center / cover;
+}
+
+.slider2 {
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner2.jpg) no-repeat center / cover;
+}
+
+.slider3 {
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner3.jpg) no-repeat center / cover;
+}
+
+.slider4 {
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner4.jpg) no-repeat center / cover;
+}
+
+.slider {
+    padding: 250px 100px;
+}
