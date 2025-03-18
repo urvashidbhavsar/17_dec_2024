@@ -1,4 +1,8 @@
-.navbar .navbar-nav a {
+a {
+    text-decoration: none !important;
+}
+
+.navbar .navbar-nav .nav-link {
     color: white;
 }
 
@@ -7,21 +11,63 @@
 }
 
 .slider1 {
-    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner1.jpg) no-repeat center / cover;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner1.jpg) no-repeat center / cover rgba(0, 0, 0, 0.7);
 }
 
 .slider2 {
-    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner2.jpg) no-repeat center / cover;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner2.jpg) no-repeat center / cover rgba(0, 0, 0, 0.7);
 }
 
 .slider3 {
-    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner3.jpg) no-repeat center / cover;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner3.jpg) no-repeat center / cover rgba(0, 0, 0, 0.7);
 }
 
 .slider4 {
-    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner4.jpg) no-repeat center / cover;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/banner4.jpg) no-repeat center / cover rgba(0, 0, 0, 0.7);
 }
 
 .slider {
-    padding: 250px 100px;
+    padding: 220px 150px;
+    background-blend-mode: multiply;
+}
+
+.title::before {
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #ffc107;
+    display: inline-block;
+    margin: 5px;
+}
+
+.card a {
+    transition: 0.5s ease;
+}
+
+.card a:hover {
+    color: #ffc107;
+}
+
+@media (max-width:576px) {
+    .slider {
+        padding: 100px 50px;
+    }
+}
+
+@media (min-width:576px) {
+    .slider {
+        padding: 100px 100px;
+    }
+}
+
+@media (min-width:768px) {
+    .slider {
+        padding: 150px 100px;
+    }
+}
+
+@media (min-width:1200px) {
+    .slider {
+        padding: 220px 150px;
+    }
 }

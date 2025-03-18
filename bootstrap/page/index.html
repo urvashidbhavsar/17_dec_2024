@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: darkcyan;">
+    <header style="background-color: #1260b8;">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <h3 class="m-0 fw-bold text-uppercase">
@@ -48,10 +48,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginpage">Login</a>
+                        </li>
                     </ul>
                     <div class="d-flex gap-3 align-items-center">
                         <button class="btn btn-warning btn-lg rounded-1"><i class="bi bi-search"></i> Search</button>
-                        <i class="bi bi-moon fs-5 text-white"></i>
+
+                        <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Theme change">
+                            <i class="bi bi-moon fs-5 text-white"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -62,16 +68,32 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="slider slider1"></div>
+                    <div class="slider slider1">
+                        <p class="text-white">Designing Dream</p>
+                        <p class="display-1 text-white text-capitalize">decorate idea</p>
+                        <button class="btn btn-outline-light btn-lg">Read More</button>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider slider2"></div>
+                    <div class="slider slider2">
+                        <p class="text-white">Designing Dream</p>
+                        <p class="display-1 text-white text-capitalize">decorate idea</p>
+                        <button class="btn btn-outline-light btn-lg">Read More</button>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider slider3"></div>
+                    <div class="slider slider3">
+                        <p class="text-white">Designing Dream</p>
+                        <p class="display-1 text-white text-capitalize">decorate idea</p>
+                        <button class="btn btn-outline-light btn-lg">Read More</button>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="slider slider4"></div>
+                    <div class="slider slider4">
+                        <p class="text-white">Designing Dream</p>
+                        <p class="display-1 text-white text-capitalize">interior design</p>
+                        <button class="btn btn-outline-light btn-lg">Read More</button>
+                    </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -87,9 +109,194 @@
         </div>
     </section>
 
+    <section class="">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-xl-6">
+                    <p class="text-warning fw-bold fs-5 title">About Us</p>
+                    <h2>We provide you the quality with perfect credibility</h2>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor
+                        sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container py-5">
+            <h1 class="text-center pb-4">FAQ</h1>
+            <div class="accordion" id="faq_questions">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ques1"
+                            aria-expanded="true" aria-controls="ques1">
+                            How do you describe designs?
+                        </button>
+                    </h2>
+                    <div id="ques1" class="accordion-collapse collapse show" data-bs-parent="#faq_questions">
+                        <div class="accordion-body">
+                            <b> Use active and emotive language when describing the design. </b> Try to evoke an
+                            emotional
+                            response in the reader by using
+                            words that describe the design in a positive light, such as beautiful, elegant, and
+                            charming. 2. Describe the layout of
+                            your design in detail.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ques2" aria-expanded="false" aria-controls="ques2">
+                            What do you mean by design?
+                        </button>
+                    </h2>
+                    <div id="ques2" class="accordion-collapse collapse" data-bs-parent="#faq_questions">
+                        <div class="accordion-body">
+                            to create, fashion, execute, or construct according to plan : devise, contrive.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ques3" aria-expanded="false" aria-controls="ques3">
+                            What is the importance of design?
+                        </button>
+                    </h2>
+                    <div id="ques3" class="accordion-collapse collapse" data-bs-parent="#faq_questions">
+                        <div class="accordion-body">
+                            Design has many applications. Design can be used to improve products, processes and
+                            environments thereby improving daily
+                            lives of people. Using a systematic and creative process, which has human needs at the core,
+                            design helps to solve human
+                            problem and bring about responsible change.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#ques4" aria-expanded="false" aria-controls="ques4">
+                            What is a simple design?
+                        </button>
+                    </h2>
+                    <div id="ques4" class="accordion-collapse collapse" data-bs-parent="#faq_questions">
+                        <div class="accordion-body">
+                            A simple design can be characterized as a design that is not elaborate or artificial but is
+                            crisp and concise.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container py-5">
+            <p class="text-warning fs-5 fw-bold text-center title">Blog</p>
+            <h2 class="text-center">Latest Post</h2>
+            <div class="row pt-3 g-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g7.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="pb-2">
+                                July 12, 2021 <span class="text-warning fw-bold">- by Admin</span>
+                            </div>
+                            <h5 class="card-title">
+                                <a href="">
+                                    Train yourself for the practice of interior design
+                                </a>
+                            </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <button class="btn btn-warning">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g8.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="pb-2">
+                                July 22, 2021 <span class="text-warning fw-bold">- by Admin</span>
+                            </div>
+                            <h5 class="card-title">
+                                <a href="">
+                                    Choose the style, we complete with our file
+                                </a>
+                            </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <button class="btn btn-warning">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://p.w3layouts.com/demos_new/template_demo/08-09-2021/introdos-liberty-demo_Free/185442563/web/assets/images/g6.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="pb-2">
+                                July 25, 2021 <span class="text-warning fw-bold">- by Admin</span>
+                            </div>
+                            <h5 class="card-title">
+                                <a href="">
+                                    Train yourself for the practice of interior design
+                                </a>
+                            </h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's
+                                content.</p>
+                            <button class="btn btn-warning">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginpage" tabindex="-1" aria-labelledby="loginpageLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginpageLabel">User Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="text" placeholder="Email Address" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" placeholder="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Proceed ➡</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <script src="../boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>

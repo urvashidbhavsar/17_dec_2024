@@ -1,0 +1,1 @@
+document.writeln("We create External file")
