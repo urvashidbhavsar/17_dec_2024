@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var sub = "JavaScript"
+
+        // before ES6
+        document.writeln("<p class='p1'>We learn " + sub + "</p>");
+        document.writeln("<p class='p1'>" + sub + " is a lightweight language </p>")
+
+        // after ES6
+        document.writeln(`<p class='p1'>We learn ${sub}</p>`);
+    </script>
+</body>
+
+</html>
