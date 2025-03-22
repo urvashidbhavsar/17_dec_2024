@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // print that number is maxinum. from 2 inputed value
+
+        let a = 23, b = 23;
+        if (a > b) {
+            document.writeln(`<p>${a} is maximum</p>`);
+        } else if (b > a) {
+            document.writeln(`<p>${b} is maximum...</p>`);
+        } else {
+            document.writeln("<p>both are same</p>")
+        }
+
+        // print that number is maxinum. from 3 inputed value.
+        let x = 23, y = 23, z = 23;
+        if (x > y && x > z) {
+            document.writeln(`<p>${x} is maximum</p>`);
+        } else if (y > x && y > z) {
+            document.writeln(`<p>${y} is maximum</p>`);
+        } else if (z > x && z > y) {
+            document.writeln(`<p>${z} is maximum</p>`);
+        } else {
+            document.writeln("<p>all are same</p>")
+        }
+
+        let mytext = "Hello world"
+        if (!mytext) {
+            document.writeln("text not exist")
+        } else {
+            document.writeln("text exist")
+        }
+    </script>
+</body>
+
+</html>
