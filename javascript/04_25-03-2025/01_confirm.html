@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="showconfirm()">show confirm</button>
+
+    <script>
+        var url = "https://jsonplaceholder.typicode.com/", urlclose;
+        function showconfirm() {
+            if (confirm("Are you sure to open page!!!")) {
+                // document.body.style.background = "#ad4533"
+                urlclose = window.open(url, "_blank")
+            } else {
+                // document.body.style.background = "#121212"
+                // window.close() => self tab close
+                urlclose.window.close()
+            }
+        }
+    </script>
+</body>
+
+</html>
