@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // create instance of call predefine method
+        let dt = new Date()
+
+        document.writeln(`<p> Today is : ${dt}</p>`)
+
+        document.writeln(`<p> Date is : ${dt.getDate()}/${dt.getMonth() + 1}/${dt.getFullYear()} </p>`)
+
+        document.writeln(`<p> Time is : ${dt.getHours()}:${dt.getMinutes()}:${dt.getSeconds()} </p>`)
+
+        document.writeln(`<p> Today : ${dt.getDay()} </p>`)
+
+        let day = dt.getDay()
+        switch (day) {
+            case 1:
+                document.writeln(`<p> Today : Monday </p>`)
+                break;
+            case 2:
+                document.writeln(`<p> Today : Tuesday </p>`)
+                break;
+            case 3:
+                document.writeln(`<p> Today : Wednesday </p>`)
+                break;
+            case 4:
+                document.writeln(`<p> Today : Thursday </p>`)
+                break;
+            case 5:
+                document.writeln(`<p> Today : Friday </p>`)
+                break;
+            case 6:
+                document.writeln(`<p> Today : Saturday </p>`)
+                break;
+            case 7:
+                document.writeln(`<p> Today : Sunday </p>`)
+                break;
+        }
+
+        document.writeln(`<p> Date : ${dt.toDateString()} </p>`)
+        document.writeln(`<p> Date : ${dt.toLocaleDateString()} </p>`)
+        document.writeln(`<p> Time : ${dt.toTimeString()} </p>`)
+        document.writeln(`<p> Time : ${dt.toLocaleTimeString()} </p>`)
+
+    </script>
+</body>
+
+</html>

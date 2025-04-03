@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- as per class selection -->
+    <div class="main">
+        <div class="text"></div>
+        <div class="text"></div>
+        <div class="text"></div>
+    </div>
+
+    <script>
+        let txt = document.querySelectorAll(".text");
+        for (let i = 0; i < txt.length; i++) {
+            txt[i].innerHTML = "class selection"
+        }
+    </script>
+
+    <!-- as per decendent selection -->
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    <!-- <div class="parent1">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div> -->
+
+    <script>
+        let sel = document.querySelectorAll(".parent .child");
+        for (let i = 0; i < sel.length; i++) {
+            sel[i].innerHTML = `Child is : ${i + 1}`
+        }
+    </script>
+
+    <!-- as per group selection -->
+    <h1></h1>
+    <h2></h2>
+    <p class="para"></p>
+
+    <script>
+        let myele = document.querySelectorAll("h1, h2, .para")
+        for (let i = 0; i < myele.length; i++) {
+            myele[i].innerHTML = `group : ${i + 1}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Click to proceed</button>
+
+    <script>
+        let b1 = document.getElementById("btn1")
+        b1.addEventListener("click", display)
+
+        function display() {
+            alert("Display message")
+            b1.removeEventListener("click", display)
+            b1.setAttribute("disabled", "true")
+        }
+
+    </script>
+</body>
+
+</html>

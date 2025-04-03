@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script>
+        let mypara = document.createElement("p")
+        let text = document.createTextNode("Javascript create element method");
+        mypara.appendChild(text);
+        // document.body.appendChild(mypara)
+        document.getElementById("main").appendChild(mypara)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 10px;
+        }
+
+        .msg {
+            color: red;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <div>
+            <input type="text" name="" id="user_name" placeholder="Enter Name">
+            <span class="msg" id="err1"></span>
+        </div>
+        <div>
+            <button onclick="return userinput()">Submit</button>
+        </div>
+        <div>You Entered : <span id="res"></span></div>
+    </form>
+
+    <script>
+        function userinput() {
+            let fname = document.getElementById("user_name");
+            if (fname.value == "") {
+                document.getElementById("err1").innerHTML = "Please, Enter name"
+                fname.style.borderColor = "red"
+            } else {
+                document.getElementById("res").innerHTML = fname.value
+                document.getElementById("err1").innerHTML = null
+                document.getElementById("user_name").value = ""
+                fname.style.borderColor = "gray"
+            }
+
+            return false
+        } 
+    </script>
+</body>
+
+</html>

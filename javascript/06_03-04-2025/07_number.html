@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var x = 1 // integer 
+        console.log(x);
+        var y = 10.55 // floating number 
+        console.log(y);
+        var z = 1e4; // exponental number 
+        console.log(z);
+        var n = new Number(16); // integer value by number object 
+        console.log(n);
+        var str = "hello"
+
+        console.log(Number.isFinite(x));
+        console.log(Number.isFinite(y));
+
+        console.log(Number.isInteger(x));
+        console.log(Number.isInteger(y));
+
+        console.log(Number.parseFloat(x));
+        console.log(Number.parseFloat(y));
+        console.log(Number.parseFloat(str));
+
+        console.log(Number.parseInt(x));
+        console.log(Number.parseInt(y));
+        console.log(Number.parseInt(str));
+
+        var exp = 1234567890;
+        console.log(exp.toExponential(2));
+        console.log(exp.toExponential(5));
+        console.log(exp.toExponential(3));
+
+        console.log(y.toFixed());
+        console.log(y.toFixed(1));
+        console.log(y.toPrecision(2));
+
+        console.log(x.toString());
+    </script>
+</body>
+
+</html>

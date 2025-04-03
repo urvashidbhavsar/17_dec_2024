@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="n1" placeholder="number 1" onchange="return sum()"> <br><br>
+    <input type="text" name="" id="n2" placeholder="number 2" onchange="return sum()">
+
+    <p id="res"></p>
+
+    <script>
+        function sum() {
+            let n1 = document.getElementById("n1")
+            let n2 = document.getElementById("n2")
+            let res = Number(n1.value) + Number(n2.value)
+            document.getElementById("res").innerHTML = res
+            return false
+        }
+    </script>
+</body>
+
+</html>

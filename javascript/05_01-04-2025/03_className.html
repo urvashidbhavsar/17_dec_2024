@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* mynewtitle class create for add dynamically */
+        .mynewtitle {
+            color: white;
+            background-color: saddlebrown;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="addclass()">Add</button>
+    <h1 id="title">Hello world</h1>
+
+    <script>
+        function addclass() {
+            let h1 = document.querySelector("#title")
+            // h1.className = "mynewtitle"
+            if (h1.className == "title") {
+                h1.className = "mynewtitle"
+            } else {
+                h1.className = "title"
+            }
+        }
+    </script>
+</body>
+
+</html>
