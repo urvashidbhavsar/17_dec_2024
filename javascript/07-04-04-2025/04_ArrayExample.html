@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        ul {
+            background-color: rgb(47, 20, 48);
+            list-style-type: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .imageGallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list"></ul>
+
+    <div class="imageGallery"></div>
+
+    <script>
+        let mymenu = ["Home", "Service", "About", "Contact", "Blog", "Login"]
+        let ul = document.getElementById("list")
+        mymenu.forEach(menu => {
+            console.log(menu)
+            ul.innerHTML += `
+                <li><a href="">${menu}</a></li>
+            `
+        })
+
+        let myimg = document.querySelector(".imageGallery")
+        let myimgcol = [
+            "../../../images/img.jpg", "../../../images/img2.jpg",
+            "../../../images/img3.jpg", "../../../images/img4.jpg",
+            "../../../images/img5.jpg", "../../../images/img6.webp",
+            "https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+        ]
+        myimgcol.forEach(img => {
+            myimg.innerHTML += `
+            <div>
+                <img src=${img} alt="">
+            </div>`
+        })
+    </script>
+</body>
+
+</html>

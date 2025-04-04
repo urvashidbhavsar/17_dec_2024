@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let mycar = "BMW"
+        let mycar = ["BMW", "Alto", "Audi", "Jquar", "Toyota"]
+        console.log(mycar)
+
+        // to access single value of an array
+        console.log(mycar[0]);
+        console.log(mycar[1]);
+        console.log(mycar[2]);
+        console.log(mycar[3]);
+        console.log(mycar[4]);
+
+        console.log("------------ For loop ----------------")
+        // use for loop to print an array
+        for (let i = 0; i < mycar.length; i++) {
+            console.log(mycar[i])
+        }
+
+        mycar.push("Nano", "Wagenar")
+        console.log("------------ For of loop ----------------")
+        // use for of loop
+        for (let car of mycar) {
+            console.log(car)
+        }
+
+        mycar.pop()
+        console.log("------------ Foreach loop ----------------")
+        mycar.forEach(car => {
+            console.log(car)
+        })
+
+        mycar.unshift("Wegenar")
+        console.log(mycar)
+        mycar.shift()
+        console.log(mycar)
+        mycar.sort()
+        console.log(mycar);
+        mycar.reverse()
+        console.log(mycar);
+
+    </script>
+</body>
+
+</html>
