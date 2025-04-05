@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // create an object 
+        let person = {
+            firstname: "Raj",
+            lastname: "Patel",
+            mobileno: 9856325698,
+            dob: "25-02-2000"
+        }
+
+        // call person values
+        console.log(person.firstname + " " + person.lastname + " " + person.mobileno + " " + person.dob);
+
+
+        // use loop for print object value 
+        for (const per in person) {
+            if (Object.prototype.hasOwnProperty.call(person, per)) {
+                console.log(per + "➡" + person[per])
+            }
+        }
+    </script>
+</body>
+
+</html>

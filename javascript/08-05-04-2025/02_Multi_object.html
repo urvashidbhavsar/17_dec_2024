@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Mobile No</th>
+            </tr>
+        </thead>
+        <tbody id="data"></tbody>
+    </table>
+
+    <script>
+        // create an object 
+        let person = [
+            {
+                id: 1,
+                firstname: "Raj",
+                lastname: "Patel",
+                mobileno: 9856325698,
+                dob: "25-02-2000"
+            },
+            {
+                id: 2,
+                firstname: "Hina",
+                lastname: "Patel",
+                mobileno: 6566589741,
+                dob: "05-02-2005"
+            }
+        ]
+
+        let table = document.getElementById("data")
+        for (let i = 0; i < person.length; i++) {
+            // console.log(person[i])
+            // console.log(person[i].id + " " + person[i].firstname + " " + person[i].lastname + " " + person[i].dob + " " + person[i].mobileno)
+            table.innerHTML += `
+             <tr>
+                <td>${person[i].id}</td>
+                <td>${person[i].firstname} ${person[i].lastname}</td>
+                <td>${person[i].dob}</td>
+                <td>${person[i].mobileno}</td>
+            </tr>
+            `
+        }
+
+    </script>
+</body>
+
+</html>
