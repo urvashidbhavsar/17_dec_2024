@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" onsubmit="">
             <h3 class="py-3">Form validation</h3>
             <div class="row g-2">
                 <div class="col-6">
@@ -32,38 +32,44 @@
                 </div>
                 <div class="col-6">
                     <input type="text" name="" id="" class="form-control" placeholder="Mobile No"
-                        onblur="return checkValidate(this,'err3')">
+                        onblur="return checkValidate(this,'err3')" onkeyup="return checkmobileno(this,'err3',10)"
+                        maxlength="10">
                     <div class="err" id="err3"></div>
                 </div>
                 <div class="col-6">
                     <input type="text" name="" id="" class="form-control" placeholder="Pincode"
-                        onblur="return checkValidate(this,'err4')">
+                        onblur="return checkValidate(this,'err4')" onkeyup="return checkpin(this,'err4',6)"
+                        maxlength="6">
                     <div class="err" id="err4"></div>
                 </div>
                 <div class="col-6">
                     <input type="text" name="" id="" class="form-control" placeholder="Email"
-                        onblur="return checkValidate(this,'err5')">
+                        onblur="return checkValidate(this,'err5')" onkeyup="return emailvalid(this,'err5')">
                     <div class="err" id="err5"></div>
                 </div>
                 <div class="col-6">
-                    <input type="text" name="" id="" class="form-control" placeholder="Password"
-                        onblur="return checkValidate(this,'err6')">
+                    <input type="text" class="form-control" placeholder="Password" id="pass"
+                        onblur="return checkValidate(this,'err6')" onkeyup="return passwordcheck(this, 'err6')">
                     <div class="err" id="err6"></div>
                 </div>
                 <div class="col-6">
-                    <input type="text" name="" id="" class="form-control" placeholder="Re-Password"
-                        onblur="return checkValidate(this,'err7')">
+                    <input type="text" class="form-control" placeholder="Re-Password"
+                        onblur="return checkValidate(this,'err7')" onkeyup="return comparePassword('pass',this,'err7')">
                     <div class="err" id="err7"></div>
                 </div>
                 <div class="col-6">
-                    <input type="radio" name="gen" id="male" class="form-check-input">
+                    <input type="radio" name="gen" id="male" class="form-check-input"
+                        onblur="return checkedOption(this,'err8')">
                     <label for="">Male</label>
-                    <input type="radio" name="gen" id="female" class="form-check-input">
+                    <input type="radio" name="gen" id="female" class="form-check-input"
+                        onblur="return checkedOption(this,'err8')">
                     <label for="">Female</label>
+
+                    <div class="err" id="err8"></div>
                 </div>
                 <div class="col-6">
-                    <select name="" id="" class="form-select" onblur="return checkValidate(this,'err9')">
-                        <option value="">--- select city --- </option>
+                    <select class="form-select" onblur="return selectval(this,'err9')">
+                        <option value="-1">--- select city --- </option>
                         <option value="">Surat</option>
                         <option value="">Navsari</option>
                     </select>
