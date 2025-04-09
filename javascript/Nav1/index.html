@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MediaQuery.css">
+</head>
+
+<body>
+    <header>
+        <div class="boxlayout">
+            <!-- set main parent -->
+            <div class="navbar">
+                <div class="logo">pivot</div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <div style="text-align: center;padding: 10px;">
+                        <button class="navbtn">Quotation</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="menubtn" onclick="showmenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="heroimg">
+        <div class="boxlayout">
+            <div class="herotext">
+                <h1>we are leading the way construction work</h1>
+                <button class="btn">get started</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showmenu() {
+            let show = document.querySelector(".nav")
+            show.classList.toggle("nav-show")
+        }
+
+        let header = document.querySelector("header")
+        window.addEventListener("scroll", () => {
+            let curr = window.scrollY
+            if (curr > 0) {
+                header.classList.add("headerset")
+            } else {
+                header.classList.remove("headerset")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
