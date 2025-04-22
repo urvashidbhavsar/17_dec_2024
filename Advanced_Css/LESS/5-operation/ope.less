@@ -1,0 +1,20 @@
+div {
+    background-color: salmon;
+    margin: 10px;
+}
+
+@width : 600px+50%;
+@width-1 : calc(600px + 50%);
+@width-2: 10 - 5cm + 3mm;
+
+.mydiv1 {
+    width: @width;
+}
+
+.mydiv2 {
+    width: @width-1;
+}
+
+.mydiv3 {
+    width: @width-2;
+}

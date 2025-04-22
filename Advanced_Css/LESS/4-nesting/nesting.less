@@ -1,0 +1,41 @@
+// ===== position block mixins ==== 
+.pos-block {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay {
+    width: 500px;
+    border: 2px solid red;
+    position: relative;
+    overflow: hidden;
+
+    &:hover .overlay-text {
+        transform: translateY(0);
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+    .overlay-text {
+        position: absolute;
+        .pos-block();
+        background-color: rgba(0, 0, 0, 0.796);
+        display: grid;
+        place-content: center;
+        transform: translateY(350px);
+        transition: 1s ease;
+
+        h1 {
+            color: white;
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}
