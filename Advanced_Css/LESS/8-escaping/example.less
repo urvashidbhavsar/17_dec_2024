@@ -1,0 +1,92 @@
+@max576: ~"(max-width: 576px)";
+@min576: ~"(min-width: 576px)";
+@min768: ~"(min-width: 768px)";
+@min992: ~"(min-width: 992px)";
+@min1200: ~"(min-width: 1200px)";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.layout {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main {
+    .info-boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        @media @max576 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media @min576 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media @min992 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .info3 {
+            @media @max576 {
+                grid-row: 2;
+                grid-column: 1 / span 2;
+                width: 350px;
+            }
+
+            @media @min768 {
+                width: 400px;
+            }
+
+            @media @min992 {
+                grid-row: unset;
+                grid-column: unset;
+                width: unset;
+            }
+        }
+
+        .info {
+            border: 1px solid lightgray;
+            padding: 20px;
+
+            p.title {
+                padding: 3px 10px;
+                width: fit-content;
+                border-radius: 40px;
+            }
+
+            .t1 {
+                background-color: lighten(#173e6e, 65%);
+                color: saturate(#173e6e, 50%);
+            }
+
+            .t2 {
+                background-color: lighten(#6e1765, 65%);
+                color: saturate(#6e1765, 50%);
+            }
+
+            .t3 {
+                background-color: lighten(#6e2817, 65%);
+                color: saturate(#6e2817, 50%);
+            }
+
+            h2 {
+                padding: 10px 0;
+                font-size: 35px;
+            }
+
+            .details {
+                color: #4d4d4d;
+            }
+        }
+    }
+}
