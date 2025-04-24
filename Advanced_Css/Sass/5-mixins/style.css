@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  gap: 30px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  font-size: 35px;
+}
+
+.box:nth-child(1) {
+  background-color: #44aa55;
+  box-shadow: 0 0 5px #44aa55;
+  color: black;
+}
+
+.box:nth-child(2) {
+  background-color: #00f123;
+  box-shadow: 0 0 5px #00f123;
+  color: black;
+}
+
+.box:nth-child(3) {
+  background-color: crimson;
+  box-shadow: 0 0 5px crimson;
+  color: white;
+}
+
+.box:nth-child(4) {
+  background-color: rgb(6, 45, 61);
+  box-shadow: 0 0 5px rgb(6, 45, 61);
+  color: white;
+}
+
+.box:nth-child(5) {
+  background-color: #de993f;
+  box-shadow: 0 0 5px #de993f;
+  color: #25720e;
+}/*# sourceMappingURL=style.css.map */

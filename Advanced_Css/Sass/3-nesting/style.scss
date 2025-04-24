@@ -1,0 +1,17 @@
+.list {
+    background-color: saddlebrown;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+            padding: 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

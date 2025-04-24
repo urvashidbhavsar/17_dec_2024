@@ -1,0 +1,15 @@
+@use 'var';
+@use 'var1';
+
+.t1 {
+    background-color: var.$bg;
+    padding: var.$p1;
+    margin: var.$p1;
+}
+
+.t2 {
+    background-color: var1.$bg;
+    padding: var1.$p1;
+    margin: var1.$p1;
+    color: var1.$b;
+}

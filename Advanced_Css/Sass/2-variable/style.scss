@@ -1,0 +1,10 @@
+$width: 500px;
+$padding: 20px;
+$margin: 60px;
+
+.mydiv {
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+    border: 1px solid black;
+}

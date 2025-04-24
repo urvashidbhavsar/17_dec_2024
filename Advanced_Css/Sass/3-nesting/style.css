@@ -1,0 +1,14 @@
+.list {
+  background-color: saddlebrown;
+}
+.list ul {
+  display: flex;
+  list-style-type: none;
+}
+.list ul li {
+  padding: 20px;
+}
+.list ul li a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
